@@ -3,7 +3,7 @@
 const express = require('express');
 const productRouter = express.Router();
 
-const Products = require('../models/products-model');
+// const Products = require('../models/products-model');
 const products = new products;
 
 //grab all products
@@ -31,7 +31,7 @@ function handleGet(req, res, next) {
 }
 
 function handlePost(req, res, next) {
-  const newProduct = { name: req.body.name, description: req.body.description };
+//   const newProduct = { name: req.body.name, description: req.body.description };
 }
 
 module.exports = productRouter;

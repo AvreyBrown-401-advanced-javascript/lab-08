@@ -28,11 +28,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 // Routes
-// app.get('/api/v1/categories', getCategories);
-// app.post('/api/v1/categories', postCategories);
-// app.get('/api/v1/categories/:id', getCategory);
-// app.put('/api/v1/categories/:id', putCategories);
-// app.delete('/api/v1/categories/:id', deleteCategories);
+app.get('/api/v1/categories', getCategories);
+app.post('/api/v1/categories', postCategories);
+app.get('/api/v1/categories/:id', getCategory);
+app.put('/api/v1/categories/:id', putCategories);
+app.delete('/api/v1/categories/:id', deleteCategories);
 
 app.get('/api/v1/products', getProducts);
 app.post('/api/v1/products', postProducts);

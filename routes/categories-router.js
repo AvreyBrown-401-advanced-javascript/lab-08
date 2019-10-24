@@ -31,7 +31,7 @@ function handleGet(req, res, next) {
 }
 
 function handlePost(req, res, next) {
-  const newCategory = { name: req.body.name, description: req.body.description };
+  // const newCategory = { name: req.body.name, description: req.body.description };
 }
 
 module.exports = categoryRouter;
