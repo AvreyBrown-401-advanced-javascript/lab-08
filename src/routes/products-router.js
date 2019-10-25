@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const Products = require('../models/products/products-model');
 
 const router = express.Router();
 
@@ -45,3 +46,5 @@ router.delete('/product/:id', async (request, response) => {
     response.send(e);
   }
 } );
+
+module.exports = router;
