@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "jest --verbose",
     "test-watch": "jest --watchAll --verbose",
-    "lint": "eslint **/*.js"
+    "lint": "eslint ./src/**/*.js --fix"
   },
   "jest": {
     "testEnvironment": "node"

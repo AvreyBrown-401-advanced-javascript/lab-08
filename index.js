@@ -1,16 +1,11 @@
 'use strict';
 
-const server = require('./lib/server');
-require('dotenv').config();
+const mongoose = require('mongoose');
 
-// const mongoose = require('mongoose');
+mongoose.connect('mongodb+srv://Avrey125:Peaches125@cluster0-adwlw.mongodb.net/test?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
-// const mongooseOptions = {
-//   useNewUrlParser:true,
-//   useCreateIndex: true,
-// };
-// mongoose.connect(process.env.MONGODB_URI, mongooseOptions);
+require('./lib/server').start(3000);
 
-server.start(3000);
-
-// require('./src/app.js').start(process.env.PORT);
